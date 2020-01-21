@@ -1,0 +1,20 @@
+
+
+
+project name: class room
+------------
+
+repository : class room
+-----------
+
+languages: html,css,javascript,nodejs,mysql
+---------
+
+editor: vs code
+------
+
+tiff:mugisha12@gmail.com
+-----
+
+eddy:uwambajeddy@gmail.com
+-----
