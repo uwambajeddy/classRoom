@@ -9,6 +9,10 @@ app.get("/", (req, res) => {
     res.render('client/index')
 })
 
+app.get("/home", (req, res) => {
+    res.render('client/home')
+})
+
 
 
 
