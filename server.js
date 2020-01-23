@@ -70,7 +70,6 @@ passport.use(
     new LocalStrategy({
             usernameField: 'username',
             passwordField: 'password',
-            passwordcheckField: 'passwordcheck',
             passReqToCallback: true
         },
 
@@ -90,7 +89,7 @@ passport.use(
                     } else {
                         var newUserMysql = {
                             username: username,
-                            password: bcrypt.hashSync(req.body.password)
+                            password: password
                         };
 
 
@@ -142,6 +141,9 @@ passport.use(
                 });
         })
 );
+
+
+
 
 function isLoggedIn(req, res, next) {
     if (req.isAuthenticated())
