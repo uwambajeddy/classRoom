@@ -11,6 +11,53 @@
 
 <body>
     <!-- login page -->
+    <div class="m-container">
+        <div class="m-intro-content">
+            <div class="m-intro-context-text">
+                <div class="m-intro-all-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi officiis
+                    id sunt eligendi, soluta quo! Molestias tenetur animi cupiditate dolorem sit repudiandae, quos sunt
+                    dolorum facere recusandae. A, rerum veritatis?</div>
+            </div>
+        </div>
+        <div class="m-login-services">
+            <div class="m-login-services-container">
+                <div class="m-login-services-title">
+                    <h1>LOGIN HERE</h1>
+                    <% if(message.length > 0) { %>
+                    <div class="m-danger">
+                        <%= message %>
+                    </div>
+                    <% } %>
+
+
+                    <form action="/login" method="post">
+                        <input type="text" name="username" placeholder="username" required>
+                        <input type="password" name="password" placeholder="password" required>
+                        <input type="submit" value="Sign in">
+                        <div class="m-for-pass">
+                            <a href="#">Forgot password</a>
+                        </div>
+                        <div class="clear"></div>
+                    </form>
+                    <div class="m-warning">
+                        <p>If you don't have an account you can on the link below this will help you to access the main
+                            page,thank you for visiting us</p>
+                    </div>
+                    <div class="m-link-reg">
+                        <a href="/signup">Create an account</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End login page-->
+        <script src="/public/assets/js/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".m-danger").hover(function () {
+                    $(".m-danger").slideUp(700);
+                });
+            });
+        </script>
 </body>
 
 </html>
